@@ -1,0 +1,1 @@
+alert('Browser doesn\'t support module.');

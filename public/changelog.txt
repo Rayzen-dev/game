@@ -1,0 +1,6 @@
+CHANGELOG.TXT
+
+-   Préparation pour le saut
+-   Amélioration des fonctions de rendu pour le personnage
+-   Ajout de quelques lignes CSS
+-   Ajout des fonctions du background et sol
