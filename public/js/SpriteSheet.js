@@ -2,10 +2,10 @@ import * as utils from './utils.js';
 
 export default class SpriteSheet {
 
-    constructor(image) {
+    constructor(image, width = utils.getVars('TILES_WIDTH'), height = utils.getVars('TILES_HEIGHT')) {
         this.image = image;
-        this.width = utils.getVars('TILES_WIDTH');
-        this.height = utils.getVars('TILES_HEIGHT');
+        this.width = width;
+        this.height = height;
         this.tiles = new Map();
     }
 
