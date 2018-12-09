@@ -39,8 +39,7 @@ export default class TileResolver {
     searchByPosition(posX, posY) {
         return this.getByIndex(
             this.toIndex(posX),
-            this.toIndex(posY)
-        );
+            this.toIndex(posY));
     }
 
     searchByRange(x1, x2, y1, y2) {
