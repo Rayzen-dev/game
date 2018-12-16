@@ -26,8 +26,8 @@ export default class Go extends Trait {
             } else {
                 this.heading = this.dir;
             }
-            
-        } else  if (entity.vel.x !== 0) {
+
+        } else if (entity.vel.x !== 0) {
             const decel = Math.min(absX, this.deceleration * deltaTime);
             entity.vel.x += entity.vel.x > 0 ? -decel : decel;
         } else {
