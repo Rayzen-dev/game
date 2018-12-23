@@ -52,6 +52,6 @@ async function main(canvas) {
 }
 
 const canvas = document.getElementById('screen');
-canvas.width = getWidthCanvas();
+canvas.width = getWidthCanvas() - 16;
 canvas.height = getHeightCanvas();
 main(canvas);
