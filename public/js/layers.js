@@ -86,8 +86,8 @@ export function createCollisionLayer(level) {
         level.entities.forEach(entity => {
             context.beginPath();
             context.rect(
-                entity.bounds.x - camera.pos.x,
-                entity.bounds.y - camera.pos.y,
+                entity.bounds.left - camera.pos.x,
+                entity.bounds.top - camera.pos.y,
                 entity.size.x,
                 entity.size.y);
             context.stroke();
@@ -102,8 +102,8 @@ export function createCameraLayer(cameraToDraw) {
         context.strokeStyle = 'purple';
         context.beginPath();
         context.rect(
-            cameraToDraw.pos.x = fromCamera.pos.x,
-            cameraToDraw.pos.y = fromCamera.pos.y,
+            cameraToDraw.pos.x - fromCamera.pos.x,
+            cameraToDraw.pos.y - fromCamera.pos.y,
             cameraToDraw.size.x,
             cameraToDraw.size.y);
         context.stroke();
